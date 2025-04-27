@@ -1,0 +1,184 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "sku": "TECH-LP001",
+      "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Ultra Slim Laptop Pro",
+      "description": "Powerful 15-inch laptop with 16GB RAM, 512GB SSD, and a stunning 4K display. Perfect for professionals and content creators.",
+      "quantity": 42,
+      "price": 1299.99
+    },
+    {
+      "id": 2,
+      "sku": "HOME-COF255",
+      "imageUrl": "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Artisan Coffee Maker",
+      "description": "Premium coffee maker with temperature control, built-in grinder, and programmable settings for the perfect brew every morning.",
+      "quantity": 18,
+      "price": 149.95
+    },
+    {
+      "id": 3,
+      "sku": "WEAR-WTC512",
+      "imageUrl": "https://images.unsplash.com/photo-1522312346375-d1a52622a170?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "SmartLife Fitness Watch",
+      "description": "Advanced fitness tracker with heart rate monitoring, GPS, sleep analysis, and 7-day battery life. Water-resistant up to 50m.",
+      "quantity": 67,
+      "price": 89.99
+    },
+    {
+      "id": 4,
+      "sku": "AUDIO-HP100",
+      "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Premium Wireless Headphones",
+      "description": "Noise-cancelling wireless headphones with 30-hour battery life, immersive sound quality, and ultra-comfortable ear cushions.",
+      "quantity": 23,
+      "price": 249.99
+    },
+    {
+      "id": 5,
+      "sku": "HOME-LAMP33",
+      "imageUrl": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Modern Desk Lamp",
+      "description": "Adjustable LED desk lamp with 5 brightness levels, touch controls, and USB charging port. Energy-efficient and sleek design.",
+      "quantity": 51,
+      "price": 59.95
+    },
+    {
+      "id": 6,
+      "sku": "KITCH-BL055",
+      "imageUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "High-Power Blender",
+      "description": "Professional-grade blender with 1200W motor, 6 preset programs, and dishwasher-safe components. Perfect for smoothies, soups, and more.",
+      "quantity": 12,
+      "price": 179.99
+    },
+    {
+      "id": 7,
+      "sku": "TECH-SPK210",
+      "imageUrl": "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Portable Bluetooth Speaker",
+      "description": "Waterproof Bluetooth speaker with 360° sound, 20-hour battery life, and built-in microphone for calls. Perfect for outdoor adventures.",
+      "quantity": 35,
+      "price": 79.95
+    },
+    {
+      "id": 8,
+      "sku": "FURN-CHR125",
+      "imageUrl": "https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Ergonomic Office Chair",
+      "description": "Fully adjustable office chair with lumbar support, breathable mesh back, and premium cushioning for all-day comfort.",
+      "quantity": 9,
+      "price": 299.99
+    },
+    {
+      "id": 9,
+      "sku": "OUTDOOR-BBQ77",
+      "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Deluxe Gas Grill",
+      "description": "Four-burner gas grill with side burner, electronic ignition, and temperature gauge. Includes warming rack and tool hooks.",
+      "quantity": 5,
+      "price": 429.99
+    },
+    {
+      "id": 10,
+      "sku": "BEAUTY-DRY411",
+      "imageUrl": "https://images.unsplash.com/photo-1522338140262-f46f5913618a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Professional Hair Dryer",
+      "description": "Lightweight ionic hair dryer with 3 heat settings, 2 speed settings, and cool shot button. Reduces frizz and drying time.",
+      "quantity": 24,
+      "price": 129.95
+    },
+    {
+      "id": 11,
+      "sku": "TECH-TAB399",
+      "imageUrl": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Ultra-Thin Tablet",
+      "description": "10.5-inch high-resolution tablet with 128GB storage, 12-hour battery life, and powerful octa-core processor. Perfect for work and entertainment.",
+      "quantity": 31,
+      "price": 349.99
+    },
+    {
+      "id": 12,
+      "sku": "KITCH-TOAS22",
+      "imageUrl": "https://images.unsplash.com/photo-1583729897447-566636fb7b9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "4-Slice Toaster",
+      "description": "Stainless steel 4-slice toaster with 7 browning settings, defrost function, and extra-wide slots for bagels and artisan bread.",
+      "quantity": 47,
+      "price": 69.95
+    },
+    {
+      "id": 13,
+      "sku": "SPORT-BK100",
+      "imageUrl": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Mountain Bike",
+      "description": "All-terrain mountain bike with 21-speed drivetrain, front suspension, and disc brakes. Durable aluminum frame and cushioned seat.",
+      "quantity": 8,
+      "price": 599.99
+    },
+    {
+      "id": 14,
+      "sku": "GARDEN-MW044",
+      "imageUrl": "https://images.unsplash.com/photo-1590153723109-db7894c0596e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Electric Lawn Mower",
+      "description": "Cordless electric lawn mower with 40V lithium battery, 19-inch cutting deck, and 3-in-1 functionality: mulching, bagging, and side discharge.",
+      "quantity": 14,
+      "price": 329.99
+    },
+    {
+      "id": 15,
+      "sku": "BEAUTY-CURL27",
+      "imageUrl": "https://images.unsplash.com/photo-1590439471364-192aa70c0b53?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Ceramic Curling Iron",
+      "description": "Professional 1-inch ceramic curling iron with adjustable temperature settings, automatic shut-off, and heat-resistant glove included.",
+      "quantity": 29,
+      "price": 49.95
+    },
+    {
+      "id": 16,
+      "sku": "PET-BED112",
+      "imageUrl": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Luxury Pet Bed",
+      "description": "Orthopedic memory foam pet bed with waterproof lining, removable/washable cover, and non-slip bottom. Available in multiple sizes.",
+      "quantity": 16,
+      "price": 89.99
+    },
+    {
+      "id": 17,
+      "sku": "TOYS-DRONE55",
+      "imageUrl": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Camera Drone",
+      "description": "Foldable drone with 4K camera, 30-minute flight time, GPS positioning, and follow-me mode. Includes remote controller and extra batteries.",
+      "quantity": 7,
+      "price": 499.99
+    },
+    {
+      "id": 18,
+      "sku": "HOME-VAC321",
+      "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Robot Vacuum Cleaner",
+      "description": "Smart robot vacuum with mapping technology, voice control compatibility, and self-emptying dustbin. Runs up to 120 minutes on a single charge.",
+      "quantity": 19,
+      "price": 399.95
+    },
+    {
+      "id": 19,
+      "sku": "HEALTH-SCALE4",
+      "imageUrl": "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Smart Body Scale",
+      "description": "Digital bathroom scale that measures weight, BMI, body fat percentage, and more. Syncs with smartphone app to track progress over time.",
+      "quantity": 38,
+      "price": 79.99
+    },
+    {
+      "id": 20,
+      "sku": "KITCHEN-AIR88",
+      "imageUrl": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "title": "Digital Air Fryer",
+      "description": "6-quart digital air fryer with 8 preset cooking functions, easy-clean basket, and rapid air technology for healthier fried foods with 75% less fat.",
+      "quantity": 21,
+      "price": 129.99
+    }
+  ]
+}
