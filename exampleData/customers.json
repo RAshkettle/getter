@@ -1,0 +1,288 @@
+{
+  "customers": [
+    {
+      "uniqueId": "CUST-10058429",
+      "firstName": "Emily",
+      "lastName": "Johnson",
+      "email": "emily.johnson@example.com",
+      "address": {
+        "street": "482 Maple Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97204",
+        "country": "United States"
+      },
+      "phoneNumber": "503-555-7821"
+    },
+    {
+      "uniqueId": "CUST-20937164",
+      "firstName": "Michael",
+      "lastName": "Chen",
+      "email": "michael.chen@example.com",
+      "address": {
+        "street": "1735 Oak Street",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78704",
+        "country": "United States"
+      },
+      "phoneNumber": "512-555-3492"
+    },
+    {
+      "uniqueId": "CUST-30128745",
+      "firstName": "Sophia",
+      "lastName": "Garcia",
+      "email": "sophia.garcia@example.com",
+      "address": {
+        "street": "924 Birch Lane",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60614",
+        "country": "United States"
+      },
+      "phoneNumber": "312-555-9056"
+    },
+    {
+      "uniqueId": "CUST-40593217",
+      "firstName": "James",
+      "lastName": "Wilson",
+      "email": "james.wilson@example.com",
+      "address": {
+        "street": "3502 Pine Road",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98101",
+        "country": "United States"
+      },
+      "phoneNumber": "206-555-2417"
+    },
+    {
+      "uniqueId": "CUST-50682134",
+      "firstName": "Olivia",
+      "lastName": "Martinez",
+      "email": "olivia.martinez@example.com",
+      "address": {
+        "street": "718 Elm Court",
+        "city": "Denver",
+        "state": "CO",
+        "zipCode": "80202",
+        "country": "United States"
+      },
+      "phoneNumber": "303-555-8764"
+    },
+    {
+      "uniqueId": "CUST-60471598",
+      "firstName": "Ethan",
+      "lastName": "Taylor",
+      "email": "ethan.taylor@example.com",
+      "address": {
+        "street": "2451 Cedar Drive",
+        "city": "Boston",
+        "state": "MA",
+        "zipCode": "02108",
+        "country": "United States"
+      },
+      "phoneNumber": "617-555-3921"
+    },
+    {
+      "uniqueId": "CUST-70298356",
+      "firstName": "Ava",
+      "lastName": "Brown",
+      "email": "ava.brown@example.com",
+      "address": {
+        "street": "1867 Spruce Avenue",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94107",
+        "country": "United States"
+      },
+      "phoneNumber": "415-555-7032"
+    },
+    {
+      "uniqueId": "CUST-80594127",
+      "firstName": "Noah",
+      "lastName": "Patel",
+      "email": "noah.patel@example.com",
+      "address": {
+        "street": "543 Willow Street",
+        "city": "Atlanta",
+        "state": "GA",
+        "zipCode": "30303",
+        "country": "United States"
+      },
+      "phoneNumber": "404-555-1896"
+    },
+    {
+      "uniqueId": "CUST-90637821",
+      "firstName": "Isabella",
+      "lastName": "Kim",
+      "email": "isabella.kim@example.com",
+      "address": {
+        "street": "3129 Aspen Lane",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zipCode": "55401",
+        "country": "United States"
+      },
+      "phoneNumber": "612-555-4627"
+    },
+    {
+      "uniqueId": "CUST-10826739",
+      "firstName": "William",
+      "lastName": "Singh",
+      "email": "william.singh@example.com",
+      "address": {
+        "street": "875 Redwood Road",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zipCode": "19103",
+        "country": "United States"
+      },
+      "phoneNumber": "215-555-9374"
+    },
+    {
+      "uniqueId": "CUST-11932548",
+      "firstName": "Charlotte",
+      "lastName": "Nguyen",
+      "email": "charlotte.nguyen@example.com",
+      "address": {
+        "street": "2967 Magnolia Boulevard",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zipCode": "90001",
+        "country": "United States"
+      },
+      "phoneNumber": "213-555-2819"
+    },
+    {
+      "uniqueId": "CUST-12654378",
+      "firstName": "Benjamin",
+      "lastName": "Davis",
+      "email": "benjamin.davis@example.com",
+      "address": {
+        "street": "4512 Sycamore Street",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zipCode": "85001",
+        "country": "United States"
+      },
+      "phoneNumber": "602-555-7126"
+    },
+    {
+      "uniqueId": "CUST-13789245",
+      "firstName": "Amelia",
+      "lastName": "Thompson",
+      "email": "amelia.thompson@example.com",
+      "address": {
+        "street": "312 Juniper Lane",
+        "city": "Nashville",
+        "state": "TN",
+        "zipCode": "37203",
+        "country": "United States"
+      },
+      "phoneNumber": "615-555-9483"
+    },
+    {
+      "uniqueId": "CUST-14392056",
+      "firstName": "Lucas",
+      "lastName": "Rodriguez",
+      "email": "lucas.rodriguez@example.com",
+      "address": {
+        "street": "1753 Poplar Avenue",
+        "city": "Miami",
+        "state": "FL",
+        "zipCode": "33101",
+        "country": "United States"
+      },
+      "phoneNumber": "305-555-6214"
+    },
+    {
+      "uniqueId": "CUST-15741263",
+      "firstName": "Mia",
+      "lastName": "Jackson",
+      "email": "mia.jackson@example.com",
+      "address": {
+        "street": "689 Hickory Drive",
+        "city": "Detroit",
+        "state": "MI",
+        "zipCode": "48201",
+        "country": "United States"
+      },
+      "phoneNumber": "313-555-8742"
+    },
+    {
+      "uniqueId": "CUST-16258497",
+      "firstName": "Henry",
+      "lastName": "White",
+      "email": "henry.white@example.com",
+      "address": {
+        "street": "2314 Dogwood Road",
+        "city": "Dallas",
+        "state": "TX",
+        "zipCode": "75201",
+        "country": "United States"
+      },
+      "phoneNumber": "214-555-3967"
+    },
+    {
+      "uniqueId": "CUST-17463092",
+      "firstName": "Evelyn",
+      "lastName": "Smith",
+      "email": "evelyn.smith@example.com",
+      "address": {
+        "street": "971 Cypress Street",
+        "city": "New Orleans",
+        "state": "LA",
+        "zipCode": "70112",
+        "country": "United States"
+      },
+      "phoneNumber": "504-555-1732"
+    },
+    {
+      "uniqueId": "CUST-18905324",
+      "firstName": "Alexander",
+      "lastName": "Lee",
+      "email": "alexander.lee@example.com",
+      "address": {
+        "street": "3845 Beech Avenue",
+        "city": "San Diego",
+        "state": "CA",
+        "zipCode": "92101",
+        "country": "United States"
+      },
+      "phoneNumber": "619-555-4092"
+    },
+    {
+      "uniqueId": "CUST-19576238",
+      "firstName": "Abigail",
+      "lastName": "Martin",
+      "email": "abigail.martin@example.com",
+      "address": {
+        "street": "526 Walnut Lane",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zipCode": "84101",
+        "country": "United States"
+      },
+      "phoneNumber": "801-555-6327"
+    },
+    {
+      "uniqueId": "CUST-20198437",
+      "firstName": "Daniel",
+      "lastName": "Harris",
+      "email": "daniel.harris@example.com",
+      "address": {
+        "street": "1329 Chestnut Road",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zipCode": "15222",
+        "country": "United States"
+      },
+      "phoneNumber": "412-555-8905"
+    }
+  ],
+  "metadata": {
+    "generated": "2025-04-27 22:25:31",
+    "generatedBy": "RAshkettle"
+  }
+}
