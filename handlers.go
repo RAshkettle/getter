@@ -94,6 +94,101 @@ fileContent, err := getRecords(filePath)
 	w.Write(fileContent)
 }
 
+// getFileRecordByID handles requests for a single record by ID from a JSON file.
+// It retrieves the record that matches the specified ID from the JSON file.
+// The file is expected to contain a single JSON object with a property containing an array of records.
+//
+// URL Pattern: /{filename}/{id} - where:
+//   - filename should be a JSON file (without the .json extension)
+//   - id is the unique identifier for the record to retrieve
+//
+// Parameters:
+//   - w: The HTTP response writer for sending the response
+//   - r: The HTTP request being processed
+func (app *application) getFileRecordByID(w http.ResponseWriter, r *http.Request) {
+	// Extract filename and ID from the URL path
+	filename := r.PathValue("filename")
+	id := r.PathValue("id")
+	
+	// Validate inputs
+	if filename == "" {
+		http.Error(w, "Missing file name", http.StatusBadRequest)
+		return
+	}
+	
+	if id == "" {
+		http.Error(w, "Missing record ID", http.StatusBadRequest)
+		return
+	}
+	
+	// Add .json extension if needed
+	if !strings.HasSuffix(filename, ".json") {
+		filename = filename + ".json"
+	}
+	
+	// Construct full file path
+	filePath := filepath.Join(app.dataPath, filename)
+	
+	// Get file content
+	fileContent, err := getRecords(filePath)
+	if err != nil {
+		app.serverError(w, r, fmt.Errorf("error reading file %s: %w", filename, err))
+		return
+	}
+	
+	// Parse the JSON file - it contains a single object with a property that holds an array of records
+	var fileData map[string][]map[string]interface{}
+	if err := json.Unmarshal(fileContent, &fileData); err != nil {
+		app.serverError(w, r, fmt.Errorf("invalid JSON in file %s: %w", filename, err))
+		return
+	}
+	
+	// Find the array of records (we don't know the key name in advance)
+	var records []map[string]interface{}
+	var found bool
+	
+	// Check each key in the object to find an array of records
+	for _, value := range fileData {
+		if len(value) > 0 {
+			// We found an array with at least one record
+			records = value
+			found = true
+			break
+		}
+	}
+	
+	if !found {
+		// No arrays with records found
+		w.Header().Set("Content-Type", "application/json")
+		json.NewEncoder(w).Encode(map[string]interface{}{})
+		return
+	}
+	
+	// Search for the record with matching ID
+	var matchedRecord map[string]interface{}
+	for _, record := range records {
+		// Convert IDs to strings for reliable comparison
+		recordID := fmt.Sprintf("%v", record["id"])
+		if recordID == id {
+			matchedRecord = record
+			break
+		}
+	}
+	
+	// If no matching record was found, return an empty object
+	if matchedRecord == nil {
+		matchedRecord = make(map[string]interface{})
+	}
+	
+	// Set content type header
+	w.Header().Set("Content-Type", "application/json")
+	
+	// Send JSON response
+	if err := json.NewEncoder(w).Encode(matchedRecord); err != nil {
+		app.serverError(w, r, fmt.Errorf("error encoding response: %w", err))
+	}
+}
+
 func getRecords(filepath string) ([]byte, error) {
 
 	// Enforce .json extension

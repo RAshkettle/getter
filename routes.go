@@ -16,7 +16,7 @@ func (app *application) routes() http.Handler {
 
 	// Dynamic routes for JSON files
 	mux.HandleFunc("GET /{filename}", app.getFileRecords)
-	//mux.HandleFunc("GET /{filename}/{id}", app.getFileRecordByID)
+	mux.HandleFunc("GET /{filename}/{id}", app.getFileRecordByID)
 
 	return standard.Then(mux)
 }

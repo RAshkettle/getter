@@ -1,7 +1,7 @@
 {
   "customers": [
     {
-      "uniqueId": "CUST-10058429",
+      "id": "CUST-10058429",
       "firstName": "Emily",
       "lastName": "Johnson",
       "email": "emily.johnson@example.com",
@@ -15,7 +15,7 @@
       "phoneNumber": "503-555-7821"
     },
     {
-      "uniqueId": "CUST-20937164",
+      "id": "CUST-20937164",
       "firstName": "Michael",
       "lastName": "Chen",
       "email": "michael.chen@example.com",
@@ -29,7 +29,7 @@
       "phoneNumber": "512-555-3492"
     },
     {
-      "uniqueId": "CUST-30128745",
+      "id": "CUST-30128745",
       "firstName": "Sophia",
       "lastName": "Garcia",
       "email": "sophia.garcia@example.com",
@@ -43,7 +43,7 @@
       "phoneNumber": "312-555-9056"
     },
     {
-      "uniqueId": "CUST-40593217",
+      "id": "CUST-40593217",
       "firstName": "James",
       "lastName": "Wilson",
       "email": "james.wilson@example.com",
@@ -57,7 +57,7 @@
       "phoneNumber": "206-555-2417"
     },
     {
-      "uniqueId": "CUST-50682134",
+      "id": "CUST-50682134",
       "firstName": "Olivia",
       "lastName": "Martinez",
       "email": "olivia.martinez@example.com",
@@ -71,7 +71,7 @@
       "phoneNumber": "303-555-8764"
     },
     {
-      "uniqueId": "CUST-60471598",
+      "id": "CUST-60471598",
       "firstName": "Ethan",
       "lastName": "Taylor",
       "email": "ethan.taylor@example.com",
@@ -85,7 +85,7 @@
       "phoneNumber": "617-555-3921"
     },
     {
-      "uniqueId": "CUST-70298356",
+      "id": "CUST-70298356",
       "firstName": "Ava",
       "lastName": "Brown",
       "email": "ava.brown@example.com",
@@ -99,7 +99,7 @@
       "phoneNumber": "415-555-7032"
     },
     {
-      "uniqueId": "CUST-80594127",
+      "id": "CUST-80594127",
       "firstName": "Noah",
       "lastName": "Patel",
       "email": "noah.patel@example.com",
@@ -113,7 +113,7 @@
       "phoneNumber": "404-555-1896"
     },
     {
-      "uniqueId": "CUST-90637821",
+      "id": "CUST-90637821",
       "firstName": "Isabella",
       "lastName": "Kim",
       "email": "isabella.kim@example.com",
@@ -127,7 +127,7 @@
       "phoneNumber": "612-555-4627"
     },
     {
-      "uniqueId": "CUST-10826739",
+      "id": "CUST-10826739",
       "firstName": "William",
       "lastName": "Singh",
       "email": "william.singh@example.com",
@@ -141,7 +141,7 @@
       "phoneNumber": "215-555-9374"
     },
     {
-      "uniqueId": "CUST-11932548",
+      "id": "CUST-11932548",
       "firstName": "Charlotte",
       "lastName": "Nguyen",
       "email": "charlotte.nguyen@example.com",
@@ -155,7 +155,7 @@
       "phoneNumber": "213-555-2819"
     },
     {
-      "uniqueId": "CUST-12654378",
+      "id": "CUST-12654378",
       "firstName": "Benjamin",
       "lastName": "Davis",
       "email": "benjamin.davis@example.com",
@@ -169,7 +169,7 @@
       "phoneNumber": "602-555-7126"
     },
     {
-      "uniqueId": "CUST-13789245",
+      "id": "CUST-13789245",
       "firstName": "Amelia",
       "lastName": "Thompson",
       "email": "amelia.thompson@example.com",
@@ -183,7 +183,7 @@
       "phoneNumber": "615-555-9483"
     },
     {
-      "uniqueId": "CUST-14392056",
+      "id": "CUST-14392056",
       "firstName": "Lucas",
       "lastName": "Rodriguez",
       "email": "lucas.rodriguez@example.com",
@@ -197,7 +197,7 @@
       "phoneNumber": "305-555-6214"
     },
     {
-      "uniqueId": "CUST-15741263",
+      "id": "CUST-15741263",
       "firstName": "Mia",
       "lastName": "Jackson",
       "email": "mia.jackson@example.com",
@@ -211,7 +211,7 @@
       "phoneNumber": "313-555-8742"
     },
     {
-      "uniqueId": "CUST-16258497",
+      "id": "CUST-16258497",
       "firstName": "Henry",
       "lastName": "White",
       "email": "henry.white@example.com",
@@ -225,7 +225,7 @@
       "phoneNumber": "214-555-3967"
     },
     {
-      "uniqueId": "CUST-17463092",
+      "id": "CUST-17463092",
       "firstName": "Evelyn",
       "lastName": "Smith",
       "email": "evelyn.smith@example.com",
@@ -239,7 +239,7 @@
       "phoneNumber": "504-555-1732"
     },
     {
-      "uniqueId": "CUST-18905324",
+      "id": "CUST-18905324",
       "firstName": "Alexander",
       "lastName": "Lee",
       "email": "alexander.lee@example.com",
@@ -253,7 +253,7 @@
       "phoneNumber": "619-555-4092"
     },
     {
-      "uniqueId": "CUST-19576238",
+      "id": "CUST-19576238",
       "firstName": "Abigail",
       "lastName": "Martin",
       "email": "abigail.martin@example.com",
@@ -267,7 +267,7 @@
       "phoneNumber": "801-555-6327"
     },
     {
-      "uniqueId": "CUST-20198437",
+      "id": "CUST-20198437",
       "firstName": "Daniel",
       "lastName": "Harris",
       "email": "daniel.harris@example.com",
