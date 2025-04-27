@@ -32,9 +32,9 @@ func TestGetPort(t *testing.T) {
 		setupFunc      func(t *testing.T)
 	}{
 		{
-			name:      "Port from environment variable",
-			envValue:  ":3000",
-			expected:  ":3000",
+			name:     "Port from environment variable",
+			envValue: ":3000",
+			expected: ":3000",
 			setupFunc: func(t *testing.T) {
 				os.Setenv("GETTER_PORT", ":3000")
 				// Move to temp dir where there's no .env file
@@ -44,9 +44,9 @@ func TestGetPort(t *testing.T) {
 			},
 		},
 		{
-			name:      "No environment variable, no env file",
-			envValue:  "",
-			expected:  ":8080", // Default value
+			name:     "No environment variable, no env file",
+			envValue: "",
+			expected: ":8080", // Default value
 			setupFunc: func(t *testing.T) {
 				os.Unsetenv("GETTER_PORT")
 				// Move to temp dir where there's no .env file
@@ -62,19 +62,19 @@ func TestGetPort(t *testing.T) {
 			expected:       ":5000",
 			setupFunc: func(t *testing.T) {
 				os.Unsetenv("GETTER_PORT")
-				
+
 				// Create a temporary directory with a .env file
 				testDir := filepath.Join(tempDir, "withenv")
 				if err := os.Mkdir(testDir, 0755); err != nil {
 					t.Fatalf("Failed to create test directory: %v", err)
 				}
-				
+
 				// Create a .env file in the test directory
 				envPath := filepath.Join(testDir, ".env")
 				if err := os.WriteFile(envPath, []byte("GETTER_PORT=:5000"), 0644); err != nil {
 					t.Fatalf("Failed to write test .env file: %v", err)
 				}
-				
+
 				// Change to the test directory
 				if err := os.Chdir(testDir); err != nil {
 					t.Fatalf("Failed to change directory: %v", err)
@@ -88,19 +88,19 @@ func TestGetPort(t *testing.T) {
 			expected:       ":4000",
 			setupFunc: func(t *testing.T) {
 				os.Setenv("GETTER_PORT", ":4000")
-				
+
 				// Create a temporary directory with a .env file
 				testDir := filepath.Join(tempDir, "envprecedence")
 				if err := os.Mkdir(testDir, 0755); err != nil {
 					t.Fatalf("Failed to create test directory: %v", err)
 				}
-				
+
 				// Create a .env file in the test directory
 				envPath := filepath.Join(testDir, ".env")
 				if err := os.WriteFile(envPath, []byte("GETTER_PORT=:5000"), 0644); err != nil {
 					t.Fatalf("Failed to write test .env file: %v", err)
 				}
-				
+
 				// Change to the test directory
 				if err := os.Chdir(testDir); err != nil {
 					t.Fatalf("Failed to change directory: %v", err)
@@ -121,7 +121,7 @@ func TestGetPort(t *testing.T) {
 			if got != tt.expected {
 				t.Errorf("getPort() = %v, want %v", got, tt.expected)
 			}
-			
+
 			// Return to the original directory for the next test
 			if err := os.Chdir(currentDir); err != nil {
 				t.Fatalf("Failed to restore original directory: %v", err)
