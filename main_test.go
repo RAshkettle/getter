@@ -17,17 +17,17 @@ import (
 func TestServerError(t *testing.T) {
 	// Create a buffer to capture log output
 	var logBuffer bytes.Buffer
-	
+
 	// Create a logger that writes to our buffer
 	logger := slog.New(slog.NewTextHandler(&logBuffer, &slog.HandlerOptions{
 		Level: slog.LevelError, // Ensure we capture error level logs
 	}))
-	
+
 	// Create our application instance with the test logger
 	app := &application{
 		logger: logger,
 	}
-	
+
 	// Create test cases
 	tests := []struct {
 		name           string
@@ -74,39 +74,39 @@ func TestServerError(t *testing.T) {
 			expectedStatus: http.StatusInternalServerError,
 			expectedBody:   http.StatusText(http.StatusInternalServerError),
 			logChecks: []string{
-				"product not found",                      // Error message
-				http.MethodGet,                           // HTTP method
-				"/products?id=123&category=electronics",  // Request URI with query params
-				"trace",                                  // Stack trace marker
+				"product not found",                     // Error message
+				http.MethodGet,                          // HTTP method
+				"/products?id=123&category=electronics", // Request URI with query params
+				"trace",                                 // Stack trace marker
 			},
 		},
 	}
-	
+
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			// Reset the log buffer for each test
 			logBuffer.Reset()
-			
+
 			// Create a test HTTP request
 			r := httptest.NewRequest(tt.method, tt.url, nil)
-			
+
 			// Create a test response recorder
 			w := httptest.NewRecorder()
-			
+
 			// Call the function we're testing
 			app.serverError(w, r, tt.err)
-			
+
 			// Check status code
 			if w.Code != tt.expectedStatus {
 				t.Errorf("Expected status code %d, got %d", tt.expectedStatus, w.Code)
 			}
-			
+
 			// Check response body
 			if !strings.Contains(w.Body.String(), tt.expectedBody) {
-				t.Errorf("Expected body to contain %q, got %q", 
+				t.Errorf("Expected body to contain %q, got %q",
 					tt.expectedBody, w.Body.String())
 			}
-			
+
 			// Check log output
 			logOutput := logBuffer.String()
 			for _, check := range tt.logChecks {
