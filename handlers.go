@@ -189,6 +189,16 @@ func (app *application) getFileRecordByID(w http.ResponseWriter, r *http.Request
 	}
 }
 
+// getRecords loads and returns the contents of a JSON file at the specified path.
+// It ensures the file has a .json extension, checks for file existence,
+// and reads the file contents into memory.
+//
+// Parameters:
+//   - filepath: The path to the JSON file to read, with or without ".json" extension
+//
+// Returns:
+//   - []byte: The raw file contents if successful
+//   - error: An error if the file doesn't exist, can't be read, or another error occurs
 func getRecords(filepath string) ([]byte, error) {
 
 	// Enforce .json extension
