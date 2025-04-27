@@ -1,2 +1,9 @@
 # getter
-Faux Go Webserver using dynamic JSON files to create routes for API calls.  Great for DEV mockups.
+
+Getter is a faux Go web server.
+
+## Usage
+
+```
+getter <folder_path>
+```
